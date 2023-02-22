@@ -1,0 +1,104 @@
+/** @format */
+.navbar {
+  background-color: #000;
+}
+
+.logoImg {
+  width: 30px;
+}
+.navbar-nav a {
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-nav a:focus {
+  color: #fff;
+}
+.navbar-nav a:hover {
+  color: #fff;
+}
+
+._2_1Hw {
+  width: 26px;
+  height: 21px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: transform 0.33s ease-out;
+}
+
+._2x2ES {
+  background-color: #fff;
+  border-radius: 1.5px;
+  height: 3px;
+}
+
+/* open */
+._2x2ES._2Gsgc {
+  transition: transform 0.33s cubic-bezier(0.54, -0.81, 0.57, 0.57);
+  transform-origin: right;
+}
+
+._2x2ES._24e0Q {
+  align-self: flex-end;
+  transition: transform 0.33s cubic-bezier(0.54, -0.81, 0.57, 0.57);
+  transform-origin: left;
+}
+._2x2ES._3SfeL {
+  width: 50%;
+}
+
+/* close */
+._1XNn4 ._2x2ES._2Gsgc {
+  transform: rotate(-90deg) translateX(4px);
+  background-color: #fff;
+}
+._1XNn4 ._2x2ES._2vsXM,
+._1XNn4 ._2x2ES._24e0Q {
+  background-color: #fff;
+}
+._1XNn4 ._2x2ES._24e0Q {
+  background-color: #fff;
+}
+._1XNn4 ._2x2ES._24e0Q {
+  transform: rotate(-90deg) translateX(-4px);
+}
+._2_1Hw._1XNn4 {
+  transform: rotate(-45deg);
+}
+
+.mobile-nav-bar a:hover {
+  color: #fff;
+}
+
+.mobile-open-button {
+  border: none;
+  background: transparent;
+  z-index: 999;
+  cursor: pointer;
+}
+
+.mobile-open-button,
+.mobile-open-button span {
+  line-height: 1;
+}
+
+.mobile-open-button.open {
+  font-size: 4rem;
+}
+
+.mobile-open-button {
+  display: none;
+}
+
+.disabled-link {
+  pointer-events: none;
+}
+
+@media screen and (max-width: 992px) {
+  .mobile-open-button {
+    display: block;
+  }
+}

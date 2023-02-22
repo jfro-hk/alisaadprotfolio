@@ -1,0 +1,9 @@
+/** @format */
+
+.footer {
+  position: sticky;
+  background-color: #000;
+  bottom: 0;
+  width: 100%;
+  color: #fff;
+}

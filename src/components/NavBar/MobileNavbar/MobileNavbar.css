@@ -1,0 +1,30 @@
+/** @format */
+
+.mobile-nav-bar {
+  background: #000;
+  z-index: 1;
+  width: 100vw;
+  height: 0%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  visibility: hidden;
+  transition: visibility 0.5s ease-in-out, height 0.65s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile-nav-bar.open {
+  visibility: visible;
+  height: 100vh;
+}
+
+.mobile-nav-bar a {
+  font-size: 1rem;
+  color: rgb(245 245 245);
+  text-decoration: none;
+  line-height: 30px;
+  text-transform: uppercase;
+}

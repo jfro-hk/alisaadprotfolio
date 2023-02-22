@@ -1,0 +1,11 @@
+/** @format */
+
+.about {
+  background-color: #000;
+  color: #fff;
+  min-height: 100vh;
+  padding-top: 5px;
+}
+.aboutImg {
+  filter: grayscale(100%);
+}
