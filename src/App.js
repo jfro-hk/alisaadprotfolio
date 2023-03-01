@@ -1,5 +1,5 @@
 /** @format */
-
+import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import NavBar from "./components/NavBar/NavBar";
@@ -32,7 +32,8 @@ const RouteList = () => {
       <Route path="/media" element={<Media />} />
       <Route path="/projects" element={<Projects />} />
       <Route path="/boothDesigns" element={<BoothDesigns />} />
-      <Route path="/booth" element={<BoothDesignsDetails />} />
+      <Route path="/booth:slug" element={<BoothDesignsDetails />} />
+
       <Route path="/contact" element={<Contact />} />
     </Routes>
   );
