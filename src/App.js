@@ -32,7 +32,7 @@ const RouteList = () => {
       <Route path="/media" element={<Media />} />
       <Route path="/projects" element={<Projects />} />
       <Route path="/boothDesigns" element={<BoothDesigns />} />
-      <Route path="/booth:slug" element={<BoothDesignsDetails />} />
+      <Route path="/booth/:id" element={<BoothDesignsDetails />} />
 
       <Route path="/contact" element={<Contact />} />
     </Routes>
