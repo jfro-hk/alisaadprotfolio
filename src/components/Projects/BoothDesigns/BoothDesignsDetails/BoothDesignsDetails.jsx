@@ -4,16 +4,17 @@ import React, { useEffect, useState } from "react";
 
 import axios from "axios";
 import "./BoothDesignsDetails.css";
+import {useParams} from "react-router-dom";
 
 export default function BoothDesignsDetails({ Booths }) {
-  let id = Booths.slug;
-
+   let id = useParams();
+console.log(id.id)
   const [slug, setSlug] = useState([]);
 
   useEffect(() => {
     axios
       .get(
-        `http://alisaad.jhdevelopers.com/api/cases-projects-content/$2a$12$rtlPfAu0TXm6dq0Nb5ak6ePkZ1W6zyClBSXc7GHPonIKvXlSIYv6/${id}`
+        `http://alisaad.jhdevelopers.com/api/cases-projects-content/$2a$12$rtlPfAu0TXm6dq0Nb5ak6ePkZ1W6zyClBSXc7GHPonIKvXlSIYv6/`+id.id
       )
       .then((response) => {
         console.log(response.data);
@@ -33,7 +34,7 @@ export default function BoothDesignsDetails({ Booths }) {
             <div class="card mb-3">
               <img
                 class="card-img-top"
-                src={Booth.image_path}
+                src={`http://alisaad.jhdevelopers.com/${Booth.image_path}`}
                 alt="Card imag cap"
               />
               <div class="card-body">
