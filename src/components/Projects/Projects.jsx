@@ -9,59 +9,59 @@ export default function Projects() {
     <div className="projects">
       <h2>Projects</h2>
       <div className="container">
-        <div class="row py-3">
-          <div class="col-sm-6 my-3">
-            <div class="card">
-              <div class="card-body-Projects card-body d-flex align-items-center justify-content-center">
+        <div className="row py-3">
+          <div className="col-sm-6 my-3">
+            <div className="card">
+              <div className="card-body-Projects card-body d-flex align-items-center justify-content-center">
                 <Link to="/boothDesigns">
-                  <h5 class="card-title ">Booth Designs</h5>
-                  <p class="card-text">
+                  <h5 className="card-title ">Booth Designs</h5>
+                  <p className="card-text">
                     With supporting text below as a natural lead-in to
                     additional content.
                   </p>
-                  <i class="bi bi-shop"></i>
+                  <i className="bi bi-shop"></i>
                 </Link>
               </div>
             </div>
           </div>
-          <div class="col-sm-6 my-3">
-            <div class="card">
-              <div class="card-body-Projects card-body d-flex align-items-center justify-content-center">
+          <div className="col-sm-6 my-3">
+            <div className="card">
+              <div className="card-body-Projects card-body d-flex align-items-center justify-content-center">
                 <Link to="/">
-                  <h5 class="card-title">Special title treatment</h5>
-                  <p class="card-text">
+                  <h5 className="card-title">Special title treatment</h5>
+                  <p className="card-text">
                     With supporting text below as a natural lead-in to
                     additional content.
                   </p>
-                  <i class="bi bi-house"></i>
+                  <i className="bi bi-house"></i>
                 </Link>
               </div>
             </div>
           </div>
-          <div class="col-sm-6 my-3">
-            <div class="card">
-              <div class="card-body-Projects card-body d-flex align-items-center justify-content-center">
+          <div className="col-sm-6 my-3">
+            <div className="card">
+              <div className="card-body-Projects card-body d-flex align-items-center justify-content-center">
                 <Link to="/">
-                  <h5 class="card-title">Special title treatment</h5>
-                  <p class="card-text">
+                  <h5 className="card-title">Special title treatment</h5>
+                  <p className="card-text">
                     With supporting text below as a natural lead-in to
                     additional content.
                   </p>
-                  <i class="bi bi-house"></i>
+                  <i className="bi bi-house"></i>
                 </Link>
               </div>
             </div>
           </div>
-          <div class="col-sm-6 my-3">
-            <div class="card">
-              <div class="card-body-Projects card-body d-flex align-items-center">
+          <div className="col-sm-6 my-3">
+            <div className="card">
+              <div className="card-body-Projects card-body d-flex align-items-center">
                 <Link to="/">
-                  <h5 class="card-title">Special title treatment</h5>
-                  <p class="card-text">
+                  <h5 className="card-title">Special title treatment</h5>
+                  <p className="card-text">
                     With supporting text below as a natural lead-in to
                     additional content.
                   </p>
-                  <i class="bi bi-globe"></i>
+                  <i className="bi bi-globe"></i>
                 </Link>
               </div>
             </div>

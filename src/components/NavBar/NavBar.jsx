@@ -8,9 +8,9 @@ import MobileNavbar from "./MobileNavbar/MobileNavbar";
 export default function NavBar() {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
   return (
-    <nav class="navbar sticky-top navbar-expand-lg">
-      <div class="bg container">
-        <Link class="navbar-brand" to="/">
+    <nav className="navbar sticky-top navbar-expand-lg">
+      <div className="bg container">
+        <Link className="navbar-brand" to="/">
           <img
             className="logoImg img-fluid"
             alt="logo"
@@ -42,30 +42,30 @@ export default function NavBar() {
           open={isMobileNavOpen}
           handleMobile={setIsMobileNavOpen}
         />
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto text-uppercase ">
-            <li class="nav-item">
-              <Link class="nav-link " to="/">
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav ms-auto text-uppercase ">
+            <li className="nav-item">
+              <Link className="nav-link " to="/">
                 Home
               </Link>
             </li>
-            <li class="nav-item">
-              <Link class="nav-link" to="/about">
+            <li className="nav-item">
+              <Link className="nav-link" to="/about">
                 About Me
               </Link>
             </li>
-            <li class="nav-item">
-              <Link class="nav-link" to="/media">
+            <li className="nav-item">
+              <Link className="nav-link" to="/media">
                 Media
               </Link>
             </li>
-            <li class="nav-item">
-              <Link class="nav-link" to="/projects">
+            <li className="nav-item">
+              <Link className="nav-link" to="/projects">
                 Projects
               </Link>
             </li>
-            <li class="nav-item">
-              <Link class="nav-link" to="/contact">
+            <li className="nav-item">
+              <Link className="nav-link" to="/contact">
                 Contact
               </Link>
             </li>

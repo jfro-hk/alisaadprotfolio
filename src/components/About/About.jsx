@@ -6,8 +6,8 @@ import "./About.css";
 export default function About() {
   return (
     <div className="about">
-      <div class="container" data-aos="fade-up">
-        <div class="">
+      <div className="container" data-aos="fade-up">
+        <div className="">
           <h2>About</h2>
           <p>
             Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
@@ -17,56 +17,59 @@ export default function About() {
           </p>
         </div>
 
-        <div class="row">
-          <div class="col-lg-4">
+        <div className="row">
+          <div className="col-lg-4">
             <img
               src="./assets/images/bg.JPG"
-              class="aboutImg img-fluid"
+              className="aboutImg img-fluid"
               alt=""
             />
           </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content">
+          <div className="col-lg-8 pt-4 pt-lg-0 content">
             <h3>Interior Designer &amp; Production Designer.</h3>
-            <p class="fst-italic">
+            <p className="fst-italic">
               Design is a tool for improving our humanity.
             </p>
-            <div class="row">
-              <div class="col-lg-6">
+            <div className="row">
+              <div className="col-lg-6">
                 <ul>
                   <li>
-                    <i class="bi bi-chevron-right"></i>
+                    <i className="bi bi-chevron-right"></i>
                     <strong>Birthday:</strong> <span>9 Aug 1997</span>
                   </li>
                   {/* <li>
-                    <i class="bi bi-chevron-right"></i>
+                    <i className="bi bi-chevron-right"></i>
                     <strong>Website:</strong> <span>www.example.com</span>
                   </li> */}
                   <li>
-                    <i class="bi bi-chevron-right"></i> <strong>Phone:</strong>
+                    <i className="bi bi-chevron-right"></i>{" "}
+                    <strong>Phone:</strong>
                     <span>+964 077000000</span>
                   </li>
                   <li>
-                    <i class="bi bi-chevron-right"></i> <strong>City:</strong>
+                    <i className="bi bi-chevron-right"></i>{" "}
+                    <strong>City:</strong>
                     <span>Baghdad, Iraq</span>
                   </li>
                 </ul>
               </div>
-              <div class="col-lg-6">
+              <div className="col-lg-6">
                 <ul>
                   {/* <li>
-                    <i class="bi bi-chevron-right"></i> <strong>Age:</strong>
+                    <i className="bi bi-chevron-right"></i> <strong>Age:</strong>
                     <span>30</span>
                   </li> */}
                   <li>
-                    <i class="bi bi-chevron-right"></i> <strong>Degree:</strong>
+                    <i className="bi bi-chevron-right"></i>{" "}
+                    <strong>Degree:</strong>
                     <span>Bachelor's degree in interior design</span>
                   </li>
                   <li>
-                    <i class="bi bi-chevron-right"></i>
+                    <i className="bi bi-chevron-right"></i>
                     <strong>E-mail:</strong> <span>alisaad9770@yahoo.com</span>
                   </li>
                   <li>
-                    <i class="bi bi-chevron-right"></i>
+                    <i className="bi bi-chevron-right"></i>
                     <strong>Freelance:</strong> <span>Available</span>
                   </li>
                 </ul>

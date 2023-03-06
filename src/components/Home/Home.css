@@ -1,7 +1,6 @@
 /** @format */
 .home {
-  background: url("/Users/hk/Desktop/alisaadprotfolio/public/assets/images/bg.JPG")
-    no-repeat;
+  background: url("/assets/images/bg.JPG") no-repeat;
   filter: grayscale(100%);
   background-position: center 100%;
   background-size: cover;

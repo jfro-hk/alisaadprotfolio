@@ -27,25 +27,25 @@ export default function BoothDesigns() {
     <div className="BoothDesigns">
       <h2>Booth Designs</h2>
       <div className="container">
-        <div class="row py-3">
+        <div className="row py-3">
           {BoothDesigns.map((Booths) => (
-            <div class="col-sm-6 my-3">
-              <div class="card" key={Booths.id}>
+            <div className="col-sm-6 my-3">
+              <div className="card" key={Booths.id}>
                 <img
-                  class="card-img-top"
+                  className="card-img-top"
                   src={`http://alisaad.jhdevelopers.com/${Booths.path}`}
                   alt="Card imag cap"
                   width="500px"
                   height="500px"
                 />
-                <div class="card-body-BoothDesigns card-body d-flex align-items-center justify-content-center">
+                <div className="card-body-BoothDesigns card-body d-flex align-items-center justify-content-center">
                   <div>
                     <Link
                       to={`/booth/${Booths.slug}`}
-                      onClick={() => setBoothId(console.log(Booths.slug))}
+                      onClick={() => setBoothId(Booths.slug)}
                     >
-                      <h5 class="card-title ">{Booths.title}</h5>
-                      <p class="card-text">{Booths.short_desc}</p>
+                      <h5 className="card-title ">{Booths.title}</h5>
+                      <p className="card-text">{Booths.short_desc}</p>
                       {BoothId}
                     </Link>
                   </div>
