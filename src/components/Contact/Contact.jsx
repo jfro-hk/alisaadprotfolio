@@ -58,20 +58,6 @@ export default function Contact() {
               placeholder="Your Email"
               required
             />
-            <input
-              className="mb-4"
-              type="number"
-              name="phone"
-              placeholder="Your Phone"
-              required
-            />
-            <input
-              className="mb-4"
-              type="text"
-              name="service"
-              placeholder="Service"
-              required
-            />
           </div>
 
           <div className="col-sm-6 mb-5">
