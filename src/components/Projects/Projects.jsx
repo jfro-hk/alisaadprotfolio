@@ -27,8 +27,8 @@ export default function Projects() {
           <div className="col-sm-6 my-3">
             <div className="card">
               <div className="card-body-Projects card-body d-flex align-items-center justify-content-center">
-                <Link to="/">
-                  <h5 className="card-title">Special title treatment</h5>
+                <Link to="/restaurantsCafes">
+                  <h5 className="card-title">Restaurants & Cafes</h5>
                   <p className="card-text">
                     With supporting text below as a natural lead-in to
                     additional content.
@@ -41,8 +41,8 @@ export default function Projects() {
           <div className="col-sm-6 my-3">
             <div className="card">
               <div className="card-body-Projects card-body d-flex align-items-center justify-content-center">
-                <Link to="/">
-                  <h5 className="card-title">Special title treatment</h5>
+                <Link to="/houseDesigns">
+                  <h5 className="card-title">House Designs</h5>
                   <p className="card-text">
                     With supporting text below as a natural lead-in to
                     additional content.
@@ -54,9 +54,9 @@ export default function Projects() {
           </div>
           <div className="col-sm-6 my-3">
             <div className="card">
-              <div className="card-body-Projects card-body d-flex align-items-center">
-                <Link to="/">
-                  <h5 className="card-title">Special title treatment</h5>
+              <div className="card-body-Projects card-body d-flex align-items-center justify-content-center">
+                <Link to="/commercials">
+                  <h5 className="card-title">Commercials</h5>
                   <p className="card-text">
                     With supporting text below as a natural lead-in to
                     additional content.

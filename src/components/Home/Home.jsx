@@ -18,7 +18,7 @@ export default function Home() {
         </div>
 
         <div class="image">
-          <img src="/assets/images/bg.JPG" alt="" />
+          <img className="aliImage" src="/assets/images/bg.JPG" alt="" />
         </div>
       </div>
     </div>

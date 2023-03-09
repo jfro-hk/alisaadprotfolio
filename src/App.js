@@ -11,6 +11,12 @@ import BoothDesigns from "./components/Projects/BoothDesigns/BoothDesigns";
 import BoothDesignsDetails from "./components/Projects/BoothDesigns/BoothDesignsDetails/BoothDesignsDetails";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
+import RestaurantsCafes from "./components/Projects/RestaurantsCafes/RestaurantsCafes";
+import RestaurantsCafesDetails from "./components/Projects/RestaurantsCafes/RestaurantsCafesDetails/RestaurantsCafesDetails";
+import HouseDesigns from "./components/Projects/HouseDesigns/HouseDesigns";
+import HouseDesignsDetails from "./components/Projects/HouseDesigns/HouseDesignsDetails/HouseDesignsDetails";
+import Commercials from "./components/Projects/Commercials/Commercials";
+import CommercialsDetails from "./components/Projects/Commercials/CommercialsDetails/CommercialsDetails";
 
 function App() {
   return (
@@ -32,8 +38,13 @@ const RouteList = () => {
       <Route path="/media" element={<Media />} />
       <Route path="/projects" element={<Projects />} />
       <Route path="/boothDesigns" element={<BoothDesigns />} />
-      <Route path="/booth/:id" element={<BoothDesignsDetails />} />
-
+      <Route path="/:id" element={<BoothDesignsDetails />} />
+      <Route path="/restaurantsCafes" element={<RestaurantsCafes />} />
+      <Route path="/:id" element={<RestaurantsCafesDetails />} />
+      <Route path="/houseDesigns" element={<HouseDesigns />} />
+      <Route path="/:id" element={<HouseDesignsDetails />} />
+      <Route path="/commercials" element={<Commercials />} />
+      <Route path="/:id" element={<CommercialsDetails />} />
       <Route path="/contact" element={<Contact />} />
     </Routes>
   );
