@@ -7,7 +7,7 @@ export default function Page404() {
   return (
     <div className="Page404">
       <div>
-        <span className="empty">Empty</span>
+        <span className="empty">There is on content</span>
       </div>
     </div>
   );
