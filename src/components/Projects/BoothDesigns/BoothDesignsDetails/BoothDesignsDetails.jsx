@@ -61,14 +61,6 @@ export default function BoothDesignsDetails() {
           <div className="col-md-4">
             <h3 className="my-3">Project Description</h3>
             <p>{Details.description}</p>
-
-            <h3 className="my-3">Project Details</h3>
-            <ul>
-              <li>Lorem Ipsum</li>
-              <li>Dolor Sit Amet</li>
-              <li>Consectetur</li>
-              <li>Adipiscing Elit</li>
-            </ul>
           </div>
 
           <div className="col-md-8">
