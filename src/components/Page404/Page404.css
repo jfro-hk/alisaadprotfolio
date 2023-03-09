@@ -1,0 +1,13 @@
+/** @format */
+
+.Page404 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding-top: 5px;
+  background-color: #000;
+}
+.empty {
+  color: #fff;
+}

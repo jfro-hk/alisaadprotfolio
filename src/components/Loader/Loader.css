@@ -1,0 +1,30 @@
+/** @format */
+
+.Loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding-top: 5px;
+  background-color: #000;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+  position: relative;
+  color: #fff;
+  border: 1px solid;
+  box-sizing: border-box;
+  animation: fill 2s linear infinite alternate;
+}
+
+@keyframes fill {
+  0% {
+    box-shadow: 0 0 inset;
+  }
+  100% {
+    box-shadow: 0 -48px inset;
+  }
+}

@@ -12,18 +12,3 @@
 .card-body-BoothDesigns a:hover {
   color: #000;
 }
-
-.divForTextFoto {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row-reverse;
-}
-
-.text {
-  width: 300px;
-  text-align: left;
-}
-
-.foto {
-  width: 700px;
-}

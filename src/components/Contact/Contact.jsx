@@ -31,18 +31,20 @@ export default function Contact() {
     <div className="contact container">
       <h2>Contact</h2>
       <div className="container text-center">
-        <div className="row justify-content-between">
-          <div className="coBox col border border-dark p-5 m-1">
-            <h1 className="titleContactUs">Get In Touch</h1>
-            <p className="container text-center">
-              Lorem ipsum dolor sit amet consectetur.
-            </p>
-          </div>
-        </div>
+        <div className="row justify-content-between"></div>
       </div>
       <form ref={form} onSubmit={sendEmail}>
-        <div className="row">
+        <div className="row align-items-center">
           <div className="col-sm-6 mb-5">
+            <img
+              src="./assets/images/bg.JPG"
+              className="aboutImg img-fluid"
+              alt=""
+            />
+          </div>
+
+          <div className="col-sm-6 mb-5">
+            <h3>Feel Free</h3>
             <input
               className="mb-4"
               type="text"
@@ -58,9 +60,6 @@ export default function Contact() {
               placeholder="Your Email"
               required
             />
-          </div>
-
-          <div className="col-sm-6 mb-5">
             <textarea
               className="mb-4"
               name="message"
