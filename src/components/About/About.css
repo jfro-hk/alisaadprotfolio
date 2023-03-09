@@ -1,6 +1,7 @@
 /** @format */
 
 .about {
+  text-align: center;
   background-color: #000;
   color: #fff;
   min-height: 100vh;
