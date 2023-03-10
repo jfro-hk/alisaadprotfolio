@@ -1,1 +1,7 @@
 /** @format */
+
+.BoothDesignsDetails {
+  text-align: center;
+  min-height: 100vh;
+  padding-top: 5px;
+}
