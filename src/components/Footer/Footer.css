@@ -7,3 +7,12 @@
   width: 100%;
   color: #fff;
 }
+
+.Powered {
+  text-decoration: none;
+  color: #fff;
+}
+
+.Powered :hover {
+  color: #fff;
+}
