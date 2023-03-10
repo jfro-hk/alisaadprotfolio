@@ -55,7 +55,7 @@ export default function BoothDesigns() {
                   <div className="card-body-BoothDesigns card-body d-flex align-items-center justify-content-center">
                     <div>
                       <Link
-                        to={`/booth/${Booths.slug}`}
+                        to={`/${Booths.slug}`}
                         onClick={() => setBoothId(Booths.slug)}
                       >
                         <h5 className="card-title ">{Booths.title}</h5>

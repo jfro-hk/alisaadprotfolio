@@ -1,15 +1,6 @@
 /** @format */
-/* .home {
-  background: url("/assets/images/bg.JPG") no-repeat;
-  filter: grayscale(100%);
-  background-position: center 100%;
-  background-size: cover;
-  left: 0;
-  right: 0;
-  min-height: 100vh;
-} */
 
-#app {
+.home {
   display: grid;
   grid-template-columns: 1fr 2fr;
   align-items: center;
@@ -32,8 +23,8 @@
   display: inline-block;
 }
 
-.cafe,
-.mozart {
+.name,
+.textForWhatYouDo {
   animation: outer-left 1s 1s cubic-bezier(0.5, 0, 0.1, 1) both;
 }
 
@@ -42,13 +33,13 @@
   animation: inner-left 1s 1s ease both;
 }
 
-.cafe-inner {
+.name-inner {
   display: inline-block;
   animation: inner-left 1s 1s ease both,
     text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
 }
 
-.mozart-inner {
+.textForWhatYouDo-inner {
   display: inline-block;
   animation: text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
 }

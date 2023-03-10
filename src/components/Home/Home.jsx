@@ -5,20 +5,26 @@ import "./Home.css";
 export default function Home() {
   return (
     <div className="home">
-      <div id="app">
-        <div class="homeTitle">
-          <div class="homeTitle-inner">
-            <div class="cafe">
-              <div class="cafe-inner">Ali Saad</div>
-            </div>
-            <div class="mozart">
-              <div class="mozart-inner">I'm an Interior Designer</div>
-            </div>
+      <div class="homeTitle">
+        <div class="homeTitle-inner">
+          <div class="name">
+            <div class="name-inner">Ali Saad</div>
+          </div>
+          <div class="textForWhatYouDo">
+            <div class="textForWhatYouDo-inner">I'm an Interior Designer</div>
           </div>
         </div>
+      </div>
 
-        <div class="image">
-          <div className="aliImage"></div>
+      <div class="image">
+        <div className="aliImage">
+          {/* <img
+            src="./assets/images/White.png"
+            className="img-fluid"
+            alt=""
+            width="300px"
+            height="300px"
+          /> */}
         </div>
       </div>
     </div>
