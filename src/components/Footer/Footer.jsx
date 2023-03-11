@@ -13,6 +13,7 @@ export default function Footer() {
               className="Powered"
               href="https://instagram.com/jh_developers?igshid=YmMyMTA2M2Y="
               target="_blank"
+              rel="noopener noreferrer"
             >
               <span className="">© Powered by J&H developers.</span>
             </a>
