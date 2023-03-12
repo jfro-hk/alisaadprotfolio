@@ -1,0 +1,124 @@
+.MessageDone {
+  width: 100%;
+  min-height: 100vh;
+  background: #2c2c2c;
+  display: flex;
+  justify-content: center;
+}
+
+.MessageDoneContainer {
+  width: 50%;
+  height: 150px;
+  margin: 100px 15px 15px 15px;
+  padding: 10px 10px 10px 10px;
+  background-color: #ffff;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.MessageDoneButton {
+  display: flex;
+  justify-content: center;
+}
+
+.MessageDoneButton button {
+  background-color: #ffb632;
+  width: 100px;
+  height: 30px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #2c2c2c;
+}
+
+/* 
+
+@media screen and (max-width: 1420px) {
+}
+
+@media screen and (max-width: 1249px) {
+}
+
+@media screen and (max-width: 1080px) {
+}
+
+@media screen and (max-width: 990px) {
+}
+
+@media screen and (max-width: 899px) {
+  .MessageDoneContainer  {
+    width: 500px;
+    height: 150px;
+    margin: 100px 15px 15px 15px;
+  }
+ 
+}
+
+@media screen and (max-width: 820px) {
+}
+
+@media screen and (max-width: 809px) {
+}
+
+@media screen and (max-width: 723px) {
+  .MessageDoneContainer  {
+    width: 500px;
+    height: 150px;
+    margin: 100px 15px 15px 15px;
+  }
+ 
+}
+
+@media screen and (max-width: 670px) {
+
+}
+
+@media screen and (max-width: 450px) {
+  .MessageDoneContainer  {
+    width: 500px;
+    height: 150px;
+    margin: 100px 15px 15px 15px;
+  }
+ 
+}
+
+@media screen and (max-width: 560px) {
+}
+
+@media screen and (max-width: 360px) {
+
+    .MessageDoneContainer  {
+      width: 500px;
+      height: 150px;
+      margin: 100px 15px 15px 15px;
+    }
+  
+}
+
+@media screen and (max-width: 300px) {
+  .MessageDoneContainer  {
+    width: 500px;
+    height: 150px;
+    margin: 100px 15px 15px 15px;
+  }
+ 
+}
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+  .MessageDoneContainer  {
+    width: 500px;
+    height: 150px;
+    margin: 100px 15px 15px 15px;
+  }
+}
+
+@media only screen and (device-width: 812px) and (device-height: 375px) and (-webkit-device-pixel-ratio: 3) {
+  .MessageDoneContainer  {
+    width: 500px;
+    height: 150px;
+    margin: 100px 15px 15px 15px;
+  }
+
+} */
