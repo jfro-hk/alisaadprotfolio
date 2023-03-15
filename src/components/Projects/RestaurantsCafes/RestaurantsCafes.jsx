@@ -15,7 +15,13 @@ export default function RestaurantsCafes() {
 
   useEffect(() => {
     fetch(
-      "http://alisaad.jhdevelopers.com/api/cases-restaurantscafes-projects/$2a$12$5ZRbXc9SCjbQiMkA8uWjZeRM96utZI3CmksHJoP7GWtosi0EGYGfq"
+      "http://alisaad.jhdevelopers.com/api/cases-restaurantscafes-projects/$2a$12$5ZRbXc9SCjbQiMkA8uWjZeRM96utZI3CmksHJoP7GWtosi0EGYGfq",
+      {
+        body: JSON.stringify({}),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
     )
       .then((response) => response.json())
       .then((data) => {
