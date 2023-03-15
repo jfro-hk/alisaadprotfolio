@@ -6,7 +6,7 @@ import "./Contact.css";
 import { MessageDone } from "./MessageDone.component";
 
 export default function Contact() {
-  const [isSubmit, setIsSubmit] = useState(false);
+  const [isSubmit, setIsSubmit] = useState(true);
   const form = useRef();
 
   const sendEmail = (e) => {
