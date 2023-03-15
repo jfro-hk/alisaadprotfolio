@@ -2,7 +2,6 @@
 
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import axios from "axios";
 import "./HouseDesigns.css";
 import Loader from "../../Loader/Loader";
 import Page404 from "../../Page404/Page404";
@@ -14,20 +13,24 @@ export default function HouseDesigns() {
   const [isDataEmpty, setIsDataEmpty] = useState(false);
 
   useEffect(() => {
-    axios
-      .get(
-        "http://alisaad.jhdevelopers.com/api/cases-housedesigns-projects/$2a$12$Tp350chtcyMYIjFtwEwVeCU3mExjQgifoC9PhfTSIDWFYJE24qx"
-      )
-      .then((response) => {
-        if (response.data < "0") {
+    fetch(
+      "http://alisaad.jhdevelopers.com/api/cases-housedesigns-projects/$2a$12$Tp350chtcyMYIjFtwEwVeCU3mExjQgifoC9PhfTSIDWFYJE24qx"
+    )
+      .then((response) => response.json())
+      .then((data) => {
+        if (data < "0") {
           setIsDataEmpty(true);
         } else {
           setIsDataEmpty(false);
-          setHouseDesigns(response.data);
+          setHouseDesigns(data);
         }
+        console.log(data);
       })
       .then(() => {
         setIsLoading(false);
+      })
+      .catch((error) => {
+        console.log(error);
       });
   }, []);
 
@@ -43,8 +46,8 @@ export default function HouseDesigns() {
         <div className="container">
           <div className="row py-3">
             {HouseDesigns.map((HouseDesigns) => (
-              <div className="col-sm-6 my-3">
-                <div className="card" key={HouseDesigns.id}>
+              <div className="col-sm-6 my-3" key={HouseDesigns.id}>
+                <div className="card">
                   <img
                     className="card-img-top"
                     src={`http://alisaad.jhdevelopers.com/${HouseDesigns.path}`}

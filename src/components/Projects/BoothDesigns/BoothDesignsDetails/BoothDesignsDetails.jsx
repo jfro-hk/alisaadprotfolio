@@ -1,7 +1,6 @@
 /** @format */
 
 import React, { useEffect, useState } from "react";
-import axios from "axios";
 import "./BoothDesignsDetails.css";
 import { useParams } from "react-router-dom";
 import Loader from "../../../Loader/Loader";
@@ -15,26 +14,31 @@ export default function BoothDesignsDetails() {
   const [isLoading, setIsLoading] = useState(true);
   const [isDataEmpty, setIsDataEmpty] = useState(false);
   let id = useParams();
+
   useEffect(() => {
-    axios
-      .get(
-        `http://alisaad.jhdevelopers.com/api/cases-projects-content/$2a$12$rtlPfAu0TXm6dq0Nb5ak6ePkZ1W6zyClBSXc7GHPonIKvXlSIYv6/` +
-          id.id
-      )
-      .then((response) => {
-        if (response.data < "0") {
+    fetch(
+      `http://alisaad.jhdevelopers.com/api/cases-projects-content/$2a$12$rtlPfAu0TXm6dq0Nb5ak6ePkZ1W6zyClBSXc7GHPonIKvXlSIYv6/` +
+        id.id
+    )
+      .then((response) => response.json())
+      .then((data) => {
+        if (data < "0") {
           setIsDataEmpty(true);
         } else {
           setIsDataEmpty(false);
-          setTitle(response.data);
-          setDetails(response.data[0]);
-          setFoto(response.data[1]);
-          setFotos(response.data);
-          console.log(response.data);
+          setTitle(data);
+          setDetails(data[0]);
+          setFoto(data[1]);
+          setFotos(data);
+          console.log(data);
         }
+        console.log(data);
       })
       .then(() => {
         setIsLoading(false);
+      })
+      .catch((error) => {
+        console.log(error);
       });
   }, []);
 

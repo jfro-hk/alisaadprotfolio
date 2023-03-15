@@ -2,7 +2,6 @@
 
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import axios from "axios";
 import "./BoothDesigns.css";
 import Loader from "../../Loader/Loader";
 import Page404 from "../../Page404/Page404";
@@ -14,20 +13,24 @@ export default function BoothDesigns() {
   const [isDataEmpty, setIsDataEmpty] = useState(false);
 
   useEffect(() => {
-    axios
-      .get(
-        "http://alisaad.jhdevelopers.com/api/cases-projects/$2a$12$SxC9WlYIvrCjIpSJWBAsmv1bYSiewcuWAFfM2ZxWVTywErztMJu"
-      )
-      .then((response) => {
-        if (response.data < "0") {
+    fetch(
+      "http://alisaad.jhdevelopers.com/api/cases-projects/$2a$12$SxC9WlYIvrCjIpSJWBAsmv1bYSiewcuWAFfM2ZxWVTywErztMJu"
+    )
+      .then((response) => response.json())
+      .then((data) => {
+        if (data < "0") {
           setIsDataEmpty(true);
         } else {
           setIsDataEmpty(false);
-          setBoothDesigns(response.data);
+          setBoothDesigns(data);
         }
+        console.log(data);
       })
       .then(() => {
         setIsLoading(false);
+      })
+      .catch((error) => {
+        console.log(error);
       });
   }, []);
 
@@ -43,8 +46,8 @@ export default function BoothDesigns() {
         <div className="container">
           <div className="row py-3">
             {BoothDesigns.map((Booths) => (
-              <div className="col-sm-6 my-3">
-                <div className="card" key={Booths.id}>
+              <div className="col-sm-6 my-3" key={Booths.id}>
+                <div className="card">
                   <img
                     className="card-img-top"
                     src={`http://alisaad.jhdevelopers.com/${Booths.path}`}

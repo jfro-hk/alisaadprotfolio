@@ -1,5 +1,8 @@
+/** @format */
+
 import React from "react";
 import "./MessageDone.css";
+import { Link } from "react-router-dom";
 
 export const MessageDone = () => {
   return (
@@ -12,9 +15,9 @@ export const MessageDone = () => {
             Thank you! We will get back to you as soon as I can.
           </p>
           <p className="MessageDoneButton">
-            <a href="https://hkhaleefah.com/">
+            <Link to="/">
               <button>Go Back!</button>
-            </a>
+            </Link>
           </p>
         </div>
       </div>
