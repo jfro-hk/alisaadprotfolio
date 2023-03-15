@@ -14,7 +14,7 @@ export default function HouseDesigns() {
 
   useEffect(() => {
     fetch(
-      "http://alisaad.jhdevelopers.com/api/cases-housedesigns-projects/$2a$12$Tp350chtcyMYIjFtwEwVeCU3mExjQgifoC9PhfTSIDWFYJE24qx"
+      "https://crm.alisaad.art/api/cases-housedesigns-projects/$2a$12$Tp350chtcyMYIjFtwEwVeCU3mExjQgifoC9PhfTSIDWFYJE24qx"
     )
       .then((response) => response.json())
       .then((data) => {
@@ -50,7 +50,7 @@ export default function HouseDesigns() {
                 <div className="card">
                   <img
                     className="card-img-top"
-                    src={`http://alisaad.jhdevelopers.com/${HouseDesigns.path}`}
+                    src={`https://crm.alisaad.art/${HouseDesigns.path}`}
                     alt="Card imag cap"
                     width="500px"
                     height="500px"

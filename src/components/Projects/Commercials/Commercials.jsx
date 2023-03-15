@@ -14,7 +14,7 @@ export default function Commercials() {
 
   useEffect(() => {
     fetch(
-      "http://alisaad.jhdevelopers.com/api/cases-commercials-projects/$2a$12$TAPNXkecyMRrNqk8urnJqugtmj19BlNEqOjeCMD90wCq3J9DWJWf2"
+      "https://crm.alisaad.art/api/cases-commercials-projects/$2a$12$TAPNXkecyMRrNqk8urnJqugtmj19BlNEqOjeCMD90wCq3J9DWJWf2"
     )
       .then((response) => response.json())
       .then((data) => {
@@ -49,7 +49,7 @@ export default function Commercials() {
                 <div className="card">
                   <img
                     className="card-img-top"
-                    src={`http://alisaad.jhdevelopers.com/${Commercials.path}`}
+                    src={`https://crm.alisaad.art/${Commercials.path}`}
                     alt="Card imag cap"
                     width="500px"
                     height="500px"

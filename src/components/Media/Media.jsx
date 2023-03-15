@@ -12,7 +12,7 @@ export default function Media() {
 
   useEffect(() => {
     fetch(
-      "https://alisaad.jhdevelopers.com/api/media-videos/$2a$12$g12rae83xXFn9Pj3kf4ouAeHnpiddQVcoAsDYG4V3WaE3lwQzOu"
+      "https://crm.alisaad.art/api/media-videos/$2a$12$g12rae83xXFn9Pj3kf4ouAeHnpiddQVcoAsDYG4V3WaE3lwQzOu"
     )
       .then((response) => response.json())
       .then((data) => {

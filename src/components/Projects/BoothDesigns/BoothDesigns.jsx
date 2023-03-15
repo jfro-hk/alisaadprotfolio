@@ -14,7 +14,7 @@ export default function BoothDesigns() {
 
   useEffect(() => {
     fetch(
-      "http://alisaad.jhdevelopers.com/api/cases-projects/$2a$12$SxC9WlYIvrCjIpSJWBAsmv1bYSiewcuWAFfM2ZxWVTywErztMJu"
+      "https://crm.alisaad.art/api/cases-projects/$2a$12$SxC9WlYIvrCjIpSJWBAsmv1bYSiewcuWAFfM2ZxWVTywErztMJu"
     )
       .then((response) => response.json())
       .then((data) => {
@@ -50,7 +50,7 @@ export default function BoothDesigns() {
                 <div className="card">
                   <img
                     className="card-img-top"
-                    src={`http://alisaad.jhdevelopers.com/${Booths.path}`}
+                    src={`https://crm.alisaad.art/${Booths.path}`}
                     alt="Card imag cap"
                     width="500px"
                     height="500px"

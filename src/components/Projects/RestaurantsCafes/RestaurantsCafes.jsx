@@ -15,7 +15,7 @@ export default function RestaurantsCafes() {
 
   useEffect(() => {
     fetch(
-      "http://alisaad.jhdevelopers.com/api/cases-restaurantscafes-projects/$2a$12$5ZRbXc9SCjbQiMkA8uWjZeRM96utZI3CmksHJoP7GWtosi0EGYGfq"
+      "https://crm.alisaad.art/api/cases-restaurantscafes-projects/$2a$12$5ZRbXc9SCjbQiMkA8uWjZeRM96utZI3CmksHJoP7GWtosi0EGYGfq"
     )
       .then((response) => response.json())
       .then((data) => {
@@ -51,7 +51,7 @@ export default function RestaurantsCafes() {
                 <div className="card">
                   <img
                     className="card-img-top"
-                    src={`http://alisaad.jhdevelopers.com/${RestaurantsCafes.path}`}
+                    src={`https://crm.alisaad.art/${RestaurantsCafes.path}`}
                     alt="Card imag cap"
                     width="500px"
                     height="500px"
