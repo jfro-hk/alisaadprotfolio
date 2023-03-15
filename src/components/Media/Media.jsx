@@ -12,21 +12,25 @@ export default function Media() {
   const [isDataEmpty, setIsDataEmpty] = useState(false);
 
   useEffect(() => {
-    axios
-      .get(
-        "http://alisaad.jhdevelopers.com/api/media-videos/$2a$12$g12rae83xXFn9Pj3kf4ouAeHnpiddQVcoAsDYG4V3WaE3lwQzOu"
-      )
-      .then((response) => {
-        if (response.data < "0") {
+    fetch(
+      "http://alisaad.jhdevelopers.com/api/media-videos/$2a$12$g12rae83xXFn9Pj3kf4ouAeHnpiddQVcoAsDYG4V3WaE3lwQzOu"
+    )
+      .then((response) => response.json())
+      .then((data) => {
+        if (data < "0") {
           setIsDataEmpty(true);
         } else {
           setIsDataEmpty(false);
-          setMediaDesigns(response.data);
-          console.log(response.data);
+          setMediaDesigns(data);
+          console.log(data);
         }
+        console.log(data);
       })
       .then(() => {
         setIsLoading(false);
+      })
+      .catch((error) => {
+        console.log(error);
       });
   }, []);
   let boothContent;
