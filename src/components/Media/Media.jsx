@@ -1,7 +1,6 @@
 /** @format */
 
 import React, { useEffect, useState } from "react";
-import axios from "axios";
 import "./Media.css";
 import Loader from "../Loader/Loader";
 import Page404 from "../Page404/Page404";
@@ -13,7 +12,7 @@ export default function Media() {
 
   useEffect(() => {
     fetch(
-      "http://alisaad.jhdevelopers.com/api/media-videos/$2a$12$g12rae83xXFn9Pj3kf4ouAeHnpiddQVcoAsDYG4V3WaE3lwQzOu"
+      "https://alisaad.jhdevelopers.com/api/media-videos/$2a$12$g12rae83xXFn9Pj3kf4ouAeHnpiddQVcoAsDYG4V3WaE3lwQzOu"
     )
       .then((response) => response.json())
       .then((data) => {
