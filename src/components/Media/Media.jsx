@@ -49,9 +49,6 @@ export default function Media() {
                 <h5 className="card-title">{Media.title}</h5>
                 <p className="card-text">{Media.description}</p>
               </div>
-              <div className="card-footer">
-                <small className="text-muted">Last updated 3 mins ago</small>
-              </div>
             </div>
           ))}
         </div>
