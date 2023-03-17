@@ -7,10 +7,9 @@ export default function Footer() {
   return (
     <div className="footer">
       <div className="container">
-        <footer className="d-flex flex-wrap justify-content-between align-items-center py-1">
+        <footer className="Powered d-flex flex-wrap justify-content-between align-items-center py-1">
           <div className="col-md-4 d-flex align-items-center">
             <a
-              className="Powered"
               href="https://instagram.com/jh_developers?igshid=YmMyMTA2M2Y="
               target="_blank"
               rel="noopener noreferrer"
