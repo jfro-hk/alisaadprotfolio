@@ -23,30 +23,49 @@ function App() {
     <div className="App">
       <Router>
         <NavBar />
-        <RouteList />
+        {/* <RouteList /> */}
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/about" element={<About />} />
+          <Route exact path="/media" element={<Media />} />
+          <Route exact path="/projects" element={<Projects />} />
+          <Route exact path="/boothDesigns" element={<BoothDesigns />} />
+          <Route exact path="/:id" element={<BoothDesignsDetails />} />
+          <Route
+            exact
+            path="/restaurantsCafes"
+            element={<RestaurantsCafes />}
+          />
+          <Route exact path="/:id" element={<RestaurantsCafesDetails />} />
+          <Route exact path="/houseDesigns" element={<HouseDesigns />} />
+          <Route exact path="/:id" element={<HouseDesignsDetails />} />
+          <Route exact path="/commercials" element={<Commercials />} />
+          <Route exact path="/:id" element={<CommercialsDetails />} />
+          <Route exact path="/contact" element={<Contact />} />
+        </Routes>
         <Footer />
       </Router>
     </div>
   );
 }
 
-const RouteList = () => {
-  return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/media" element={<Media />} />
-      <Route path="/projects" element={<Projects />} />
-      <Route path="/boothDesigns" element={<BoothDesigns />} />
-      <Route path="/:id" element={<BoothDesignsDetails />} />
-      <Route path="/restaurantsCafes" element={<RestaurantsCafes />} />
-      <Route path="/:id" element={<RestaurantsCafesDetails />} />
-      <Route path="/houseDesigns" element={<HouseDesigns />} />
-      <Route path="/:id" element={<HouseDesignsDetails />} />
-      <Route path="/commercials" element={<Commercials />} />
-      <Route path="/:id" element={<CommercialsDetails />} />
-      <Route path="/contact" element={<Contact />} />
-    </Routes>
-  );
-};
+// const RouteList = () => {
+//   return (
+//     <Routes>
+//       <Route exact path="/" element={<Home />} />
+//       <Route exact path="/about" element={<About />} />
+//       <Route exact path="/media" element={<Media />} />
+//       <Route exact path="/projects" element={<Projects />} />
+//       <Route exact path="/boothDesigns" element={<BoothDesigns />} />
+//       <Route exact path="/:id" element={<BoothDesignsDetails />} />
+//       <Route exact path="/restaurantsCafes" element={<RestaurantsCafes />} />
+//       <Route exact path="/:id" element={<RestaurantsCafesDetails />} />
+//       <Route exact path="/houseDesigns" element={<HouseDesigns />} />
+//       <Route exact path="/:id" element={<HouseDesignsDetails />} />
+//       <Route exact path="/commercials" element={<Commercials />} />
+//       <Route exact path="/:id" element={<CommercialsDetails />} />
+//       <Route exact path="/contact" element={<Contact />} />
+//     </Routes>
+//   );
+// };
 export default App;
