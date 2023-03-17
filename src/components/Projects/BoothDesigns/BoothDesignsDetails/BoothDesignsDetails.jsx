@@ -82,7 +82,7 @@ export default function BoothDesignsDetails() {
             <div className="col-md-3 col-sm-6 mb-4" key={foto.id}>
               <img
                 className="img-fluid"
-                src={`https://crm.alisaad.art/${foto.image_path}`}
+                src={`https://crm.alisaad.art${foto.image_path}`}
                 alt="Card imag cap"
                 height="500px"
               />

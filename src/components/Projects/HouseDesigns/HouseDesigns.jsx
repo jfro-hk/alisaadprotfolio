@@ -50,7 +50,7 @@ export default function HouseDesigns() {
                 <div className="card">
                   <img
                     className="card-img-top"
-                    src={`https://crm.alisaad.art/${HouseDesigns.path}`}
+                    src={`https://crm.alisaad.art${HouseDesigns.path}`}
                     alt="Card imag cap"
                     width="500px"
                     height="500px"

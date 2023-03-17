@@ -50,7 +50,7 @@ export default function BoothDesigns() {
                 <div className="card">
                   <img
                     className="card-img-top"
-                    src={`https://crm.alisaad.art/${Booths.path}`}
+                    src={`https://crm.alisaad.art${Booths.path}`}
                     alt="Card imag cap"
                     width="500px"
                     height="500px"

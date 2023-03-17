@@ -69,7 +69,7 @@ export default function RestaurantsCafesDetails() {
           <div className="col-md-8">
             <img
               className="card-img-top"
-              src={`https://crm.alisaad.art/${foto.image_path}`}
+              src={`https://crm.alisaad.art${foto.image_path}`}
               alt="Card imag cap"
             />
           </div>
